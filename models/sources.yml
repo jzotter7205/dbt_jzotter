@@ -1,0 +1,14 @@
+version: 1
+
+sources:
+    - name: public
+      description: This is a replica of the database used by our app
+      database: analytics
+      schema: public
+      tables:
+          - name: ad_spend
+            description: this is how much we spend per day on ads
+          - name: customer_conversions
+            description: this is customers who have converted and revenue amount
+          - name: sessions
+            description: this is a list of the sessions for each customer

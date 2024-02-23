@@ -1,2 +1,2 @@
 select * 
-from analytics.public.customer_conversions
+from {{ source('public', 'customer_conversions') }}

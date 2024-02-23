@@ -1,2 +1,2 @@
 select * 
-from analytics.public.ad_spend
+from {{ source('public', 'ad_spend') }}
