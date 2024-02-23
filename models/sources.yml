@@ -1,4 +1,4 @@
-version: 1
+version: 2
 
 sources:
     - name: public
@@ -7,8 +7,8 @@ sources:
       schema: public
       tables:
           - name: ad_spend
-            description: this is how much we spend per day on ads
+            description: This is how much we spend per day on ads
           - name: customer_conversions
-            description: this is customers who have converted and revenue amount
+            description: This is customers who have converted and revenue amount
           - name: sessions
-            description: this is a list of the sessions for each customer
+            description: This is a list of the sessions for each customer
