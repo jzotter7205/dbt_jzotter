@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: stg_sessions
+    description: This pulls the session data into our model
+    columns:
+      - name: session_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_customer_conversions
+    description: This pulls the customer conversions data into our model
+    columns:
+      - name: customer_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              to: ref('stg_sessions')
+              field: customer_id
+
+  - name: stg_ad_spend
+    description: This pulls the ad spend data into our model
+    columns:
+      - name: date_day
+        tests:
+          - not_null
+      - name: utm_source
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['facebook_ads', 'adwords']
+      - name: utm_medium
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['paid_social', 'paid_search']
+      - name: utm_campaign
+        tests:
+          - not_null
+
