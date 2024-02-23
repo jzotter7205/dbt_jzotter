@@ -1,2 +1,2 @@
 select *
-from analytics.public.sessions
+from {{ source('public', 'sessions') }}
