@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+    - name: public
+      description: This is a replica of the database used by our app
+      database: analytics
+      schema: public
+      tables:
+          - name: subscription_periods
+            description: This is a list of subscription periods by customer including months and amount
