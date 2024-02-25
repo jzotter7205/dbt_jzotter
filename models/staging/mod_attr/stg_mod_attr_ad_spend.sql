@@ -2,7 +2,7 @@ with ad_spend as (
 
 
     select *
-    from {{ ref('mod_attr_ad_spend_source') }}
+    from {{ source('public', 'ad_spend') }}
 
 )
 

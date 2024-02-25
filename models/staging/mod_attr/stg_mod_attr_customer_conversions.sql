@@ -2,7 +2,7 @@ with customer_conversions as (
 
 
     select *
-    from {{ ref('mod_attr_customer_conversions_source') }}
+    from {{ source('public', 'customer_conversions') }}
 
 )
 
