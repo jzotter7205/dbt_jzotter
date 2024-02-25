@@ -1,12 +1,12 @@
 with ad_spend as (
 
-    select * from {{ ref('stg_ad_spend') }}
+    select * from {{ ref('stg_mod_attr_ad_spend') }}
 
 ),
 
 attribution as (
 
-    select * from {{ ref('attribution_touches') }}
+    select * from {{ ref('mod_attr_attribution_touches') }}
 
 ),
 
