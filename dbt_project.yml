@@ -38,8 +38,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   analytics:
     marts:
-      marketing:
+      mod_attr:
         +materialized: table
     staging:
+      mod_attr:
       +materialized: view
 
