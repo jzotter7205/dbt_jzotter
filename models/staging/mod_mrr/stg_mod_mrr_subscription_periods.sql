@@ -2,7 +2,7 @@ with subscription_periods as (
 
 
     select *
-    from {{ ref('mod_mrr_subscription_periods_source') }}
+    from {{ source('public', 'subscription_periods') }}
 
 )
 
