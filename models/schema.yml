@@ -24,6 +24,13 @@ models:
 
   - name: stg_ad_spend
     description: This pulls the ad spend data into our model
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - date_day
+            - utm_source
+            - utm_medium
+            - utm_campaign
     columns:
       - name: date_day
         tests:
