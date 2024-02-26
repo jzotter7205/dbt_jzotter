@@ -1,6 +1,6 @@
 with subscription_periods as (
 
-    select * from {{ ref('stg_mod_mrr_subscription_periods') }}
+    select * from {{ ref('stg_mod_mrr__subscription_periods') }}
 
 ),
 

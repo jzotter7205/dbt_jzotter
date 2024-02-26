@@ -1,12 +1,12 @@
 with sessions as (
 
-    select * from {{ ref('stg_mod_attr_sessions') }}
+    select * from {{ ref('stg_mod_attr__sessions') }}
 
 ),
 
 customer_conversions as (
 
-    select * from {{ ref('stg_mod_attr_customer_conversions') }}
+    select * from {{ ref('stg_mod_attr__customer_conversions') }}
 
 ),
 
