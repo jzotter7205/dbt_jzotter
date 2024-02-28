@@ -1,1 +1,1 @@
-# This is my respository for testing dbt code
+# This is my repository for testing dbt code
