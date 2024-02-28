@@ -3,4 +3,6 @@ packages:
   version: 1.1.1
 - package: dbt-labs/audit_helper
   version: 0.10.0
-sha1_hash: fcadde7dda8c78c2568804d46d5e72941f005f3a
+- package: gitlabhq/snowflake_spend
+  version: 1.3.0
+sha1_hash: a7c4ec711eb921fdea83cc6813ed8671c59d0853
