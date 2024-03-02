@@ -19,7 +19,7 @@ models:
           - unique
           - not_null
           - relationships:
-              to: ref('stg_sessions')
+              to: ref('stg_mod_attr__sessions')
               field: customer_id
 
   - name: stg_mod_attr__ad_spend
