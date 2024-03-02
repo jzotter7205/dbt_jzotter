@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_subscription_periods
+  - name: stg_mod_mrr__subscription_periods
     description: This pulls the subscription periods data into our model
     columns:
       - name: subscription_id

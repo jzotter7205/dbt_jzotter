@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_sessions
+  - name: stg_mod_attr__sessions
     description: This pulls the session data into our model
     columns:
       - name: session_id
@@ -10,7 +10,7 @@ models:
           - unique
           - not_null
 
-  - name: stg_customer_conversions
+  - name: stg_mod_attr__customer_conversions
     description: This pulls the customer conversions data into our model
     columns:
       - name: customer_id
@@ -22,7 +22,7 @@ models:
               to: ref('stg_sessions')
               field: customer_id
 
-  - name: stg_ad_spend
+  - name: stg_mod_attr__ad_spend
     description: This pulls the ad spend data into our model
     tests:
       - dbt_utils.unique_combination_of_columns:
